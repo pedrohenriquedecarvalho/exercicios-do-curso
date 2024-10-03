@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuario</title>
+    <style>
+        body{
+         
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <form action="confirmar.html" method="get">
+        <label for="nome" >Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="digite o seu nome" required>
+<br>
+        <label for="data">Data de nascimento</label>
+        <input type="date" name="data" id="data">
+<br>
+<label for="numerotelefone">Telefone</label>
+<input type="text" name="Telefone" id="telefone" pattern="[0-9]{10,12}" placeholder="(00)00000-0000">
+<br>
+        <label for="email">Digite o seu E-mail</label>
+        <input type="email" name="emaill" id="email">
+<br>
+        <img src="url/mochila.png" alt="mochila da nike">
+        <label for="mochiila">Avalie a nossa mochila</label>
+        <input type="range" name="mochila" id="mochila" min="0" max="10">
+
+        <img src="url/chinelo.png" alt="chinelo da nike" height="300px" width="300px">
+        <label for="chinelo">Avalie o nosso chinelo</label>
+        <input type="range" name="chinelo" id="chinelo" min="0" max="10">
+<br>
+        <img src="url/tenis.png" alt="tenis da nike" height="300px" width="300px">
+        <label for="tenis">Avalie o nosso tênis</label>
+        <input type="range" name="tenis" id="tenis" min="0" max="10">
+<br>
+        <input type="submit" value="enviar">
+        
+    </form>
+</body>
+</html>
